@@ -20,7 +20,7 @@ RSpec.feature "Listing Articles" do
 
 
 
-  scenario "A user has no  articles" do
+  scenario "A user has no articles" do
     Article.delete_all
     visit "/"
     expect(page).not_to have_content(@article1.title) 
